@@ -1,0 +1,140 @@
+messages:
+  no-permission:
+    message:
+      enabled: true
+      value:
+        - "&8[&c&lAlert&8] &cYou do not have &4permission &cto execute this!"
+    sound:
+      enabled: true
+      value: "FIZZ"
+      volume: 1
+      pitch: 1
+  invalid-player:
+    message:
+      enabled: true
+      value:
+        - "&8[&c&lAlert&8] &cThis player does not exist! If you think this is a error, send this message to a staff."
+    sound:
+      enabled: true
+      value: "FIZZ"
+      volume: 1
+      pitch: 1
+  invalid-number:
+    message:
+      enabled: true
+      value:
+        - "&8[&c&lAlert&8] &cThis number is invalid! If you think this is a error, send this message to a staff."
+    sound:
+      enabled: true
+      value: "FIZZ"
+      volume: 1
+      pitch: 1
+  not-enough-tokens:
+    message:
+      enabled: true
+      value:
+        - "&8[&c&lAlert&8] &cYou need &4&n%amount%&c more tokens to do this!"
+    sound:
+      enabled: true
+      value: "FIZZ"
+      volume: 1
+      pitch: 1
+  help-player:
+    message:
+      enabled: true
+      value:
+        - "#ae5bb9M#ab58bdi#a856c1n#a453c6e#a150caJ#9e4ecee#9b4bd2w#9748d7e#9446dbl#9143dfs &8| #ae5bb9H#a453c6e#9b4bd2l#9143dfp"
+        - "&7"
+        - "#AE5BB9✧ #9143DF/tokens balance &f<player>"
+        - "#AE5BB9✧ #9143DF/tokens pay &f{player} {amount}"
+    sound:
+      enabled: false
+      value: "FIZZ"
+      volume: 1
+      pitch: 1
+  help-admin:
+    message:
+      enabled: true
+      value:
+        - "#ae5bb9M#ab58bdi#a856c1n#a453c6e#a150caJ#9e4ecee#9b4bd2w#9748d7e#9446dbl#9143dfs &8| #ae5bb9H#a453c6e#9b4bd2l#9143dfp"
+        - "&7"
+        - "#AE5BB9✧ #9143DF/tokens balance &f<player>"
+        - "#AE5BB9✧ #9143DF/tokens pay &f{player} {amount}"
+        - "#AE5BB9✧ #9143DF/tokens give &f{player} {amount}"
+        - "#AE5BB9✧ #9143DF/tokens set &f{player} {amount}"
+        - "#AE5BB9✧ #9143DF/tokens remove &f{player} {amount}"
+    sound:
+      enabled: false
+      value: "FIZZ"
+      volume: 1
+      pitch: 1
+  tokens-balance:
+    message:
+      enabled: true
+      value:
+        - "&8[&b&lAlert&8] &bYou currently have &3&n%amount%&b tokens!"
+    sound:
+      enabled: false
+      value: "FIZZ"
+      volume: 1
+      pitch: 1
+  tokens-balance-others:
+    message:
+      enabled: true
+      value:
+        - "&8[&b&lAlert&8] &b%player% currently has &3&n%amount%&b tokens!"
+    sound:
+      enabled: false
+      value: "FIZZ"
+      volume: 1
+      pitch: 1
+  tokens-sent:
+    message:
+      enabled: true
+      value:
+        - "&8[&b&lAlert&8] &bYou have sent &3&n%amount%&b tokens to %target%!"
+    sound:
+      enabled: false
+      value: "FIZZ"
+      volume: 1
+      pitch: 1
+  tokens-received:
+    message:
+      enabled: true
+      value:
+        - "&8[&b&lAlert&8] &bYou have received &3&n%amount%&b tokens from %player%!"
+    sound:
+      enabled: false
+      value: "FIZZ"
+      volume: 1
+      pitch: 1
+  tokens-set:
+    message:
+      enabled: true
+      value:
+        - "&8[&b&lAlert&8] &bYour balance was set to &3&n%amount%&b tokens!"
+    sound:
+      enabled: false
+      value: "FIZZ"
+      volume: 1
+      pitch: 1
+  tokens-added:
+    message:
+      enabled: true
+      value:
+        - "&8[&b&lAlert&8] &bYou have had &3&n%amount%&b tokens added to your balance!"
+    sound:
+      enabled: false
+      value: "FIZZ"
+      volume: 1
+      pitch: 1
+  tokens-removed:
+    message:
+      enabled: true
+      value:
+        - "&8[&b&lAlert&8] &bYou have had &3&n%amount%&b tokens removed from your balance!"
+    sound:
+      enabled: false
+      value: "FIZZ"
+      volume: 1
+      pitch: 1

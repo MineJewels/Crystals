@@ -1,0 +1,7 @@
+name: JewelsTokens
+version: ${project.version}
+main: org.minejewels.jewelstokens.JewelsTokens
+api-version: 1.19
+depend: [ AbyssLib, PlaceholderAPI ]
+authors: [ Consciences ]
+description: Custom currency for MineJewels!
