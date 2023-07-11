@@ -29,11 +29,11 @@ messages:
       value: "FIZZ"
       volume: 1
       pitch: 1
-  not-enough-tokens:
+  not-enough-crystals:
     message:
       enabled: true
       value:
-        - "&8[&c&lAlert&8] &cYou need &4&n%amount%&c more minerals to do this!"
+        - "&8[&c&lAlert&8] &cYou need &4&n%amount%&c more crystals to do this!"
     sound:
       enabled: true
       value: "FIZZ"
@@ -45,8 +45,8 @@ messages:
       value:
         - "#ae5bb9M#ab58bdi#a856c1n#a453c6e#a150caJ#9e4ecee#9b4bd2w#9748d7e#9446dbl#9143dfs &8| #ae5bb9H#a453c6e#9b4bd2l#9143dfp"
         - "&7"
-        - "#AE5BB9✧ #9143DF/minerals balance &f<player>"
-        - "#AE5BB9✧ #9143DF/minerals pay &f{player} {amount}"
+        - "#AE5BB9✧ #9143DF/crystals balance &f<player>"
+        - "#AE5BB9✧ #9143DF/crystals pay &f{player} {amount}"
     sound:
       enabled: false
       value: "FIZZ"
@@ -58,81 +58,81 @@ messages:
       value:
         - "#ae5bb9M#ab58bdi#a856c1n#a453c6e#a150caJ#9e4ecee#9b4bd2w#9748d7e#9446dbl#9143dfs &8| #ae5bb9H#a453c6e#9b4bd2l#9143dfp"
         - "&7"
-        - "#AE5BB9✧ #9143DF/minerals balance &f<player>"
-        - "#AE5BB9✧ #9143DF/minerals pay &f{player} {amount}"
-        - "#AE5BB9✧ #9143DF/minerals give &f{player} {amount}"
-        - "#AE5BB9✧ #9143DF/minerals set &f{player} {amount}"
-        - "#AE5BB9✧ #9143DF/minerals remove &f{player} {amount}"
+        - "#AE5BB9✧ #9143DF/crystals balance &f<player>"
+        - "#AE5BB9✧ #9143DF/crystals pay &f{player} {amount}"
+        - "#AE5BB9✧ #9143DF/crystals give &f{player} {amount}"
+        - "#AE5BB9✧ #9143DF/crystals set &f{player} {amount}"
+        - "#AE5BB9✧ #9143DF/crystals remove &f{player} {amount}"
     sound:
       enabled: false
       value: "FIZZ"
       volume: 1
       pitch: 1
-  minerals-balance:
+  crystals-balance:
     message:
       enabled: true
       value:
-        - "&8[&b&lAlert&8] &bYou currently have &3&n%amount%&b minerals!"
+        - "&8[&b&lAlert&8] &bYou currently have &3&n%amount%&b crystals!"
     sound:
       enabled: false
       value: "FIZZ"
       volume: 1
       pitch: 1
-  minerals-balance-others:
+  crystals-balance-others:
     message:
       enabled: true
       value:
-        - "&8[&b&lAlert&8] &b%player% currently has &3&n%amount%&b minerals!"
+        - "&8[&b&lAlert&8] &b%player% currently has &3&n%amount%&b crystals!"
     sound:
       enabled: false
       value: "FIZZ"
       volume: 1
       pitch: 1
-  minerals-sent:
+  crystals-sent:
     message:
       enabled: true
       value:
-        - "&8[&b&lAlert&8] &bYou have sent &3&n%amount%&b minerals to %target%!"
+        - "&8[&b&lAlert&8] &bYou have sent &3&n%amount%&b crystals to %target%!"
     sound:
       enabled: false
       value: "FIZZ"
       volume: 1
       pitch: 1
-  minerals-received:
+  crystals-received:
     message:
       enabled: true
       value:
-        - "&8[&b&lAlert&8] &bYou have received &3&n%amount%&b minerals from %player%!"
+        - "&8[&b&lAlert&8] &bYou have received &3&n%amount%&b crystals from %player%!"
     sound:
       enabled: false
       value: "FIZZ"
       volume: 1
       pitch: 1
-  minerals-set:
+  crystals-set:
     message:
       enabled: true
       value:
-        - "&8[&b&lAlert&8] &bYour balance was set to &3&n%amount%&b minerals!"
+        - "&8[&b&lAlert&8] &bYour balance was set to &3&n%amount%&b crystals!"
     sound:
       enabled: false
       value: "FIZZ"
       volume: 1
       pitch: 1
-  minerals-added:
+  crystals-added:
     message:
       enabled: true
       value:
-        - "&8[&b&lAlert&8] &bYou have had &3&n%amount%&b minerals added to your balance!"
+        - "&8[&b&lAlert&8] &bYou have had &3&n%amount%&b crystals added to your balance!"
     sound:
       enabled: false
       value: "FIZZ"
       volume: 1
       pitch: 1
-  minerals-removed:
+  crystals-removed:
     message:
       enabled: true
       value:
-        - "&8[&b&lAlert&8] &bYou have had &3&n%amount%&b minerals removed from your balance!"
+        - "&8[&b&lAlert&8] &bYou have had &3&n%amount%&b crystals removed from your balance!"
     sound:
       enabled: false
       value: "FIZZ"

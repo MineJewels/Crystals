@@ -1,16 +1,16 @@
-package org.minejewels.jewelsminerals.placeholder;
+package org.minejewels.jewelscrystals.placeholder;
 
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import net.abyssdev.abysslib.utils.Utils;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
-import org.minejewels.jewelsminerals.JewelsMinerals;
+import org.minejewels.jewelscrystals.JewelsCrystals;
 
 public class MineralsPlaceholder extends PlaceholderExpansion {
 
-    private final JewelsMinerals plugin;
+    private final JewelsCrystals plugin;
 
-    public MineralsPlaceholder(final JewelsMinerals plugin) {
+    public MineralsPlaceholder(final JewelsCrystals plugin) {
         this.plugin = plugin;
 
         this.register();
@@ -18,7 +18,7 @@ public class MineralsPlaceholder extends PlaceholderExpansion {
 
     @Override
     public @NotNull String getIdentifier() {
-        return "minerals";
+        return "crystals";
     }
 
     @Override

@@ -1,6 +1,6 @@
-name: JewelsMinerals
+name: JewelsCrystals
 version: ${project.version}
-main: org.minejewels.jewelsminerals.JewelsMinerals
+main: org.minejewels.jewelscrystals.JewelsCrystals
 api-version: 1.19
 depend: [ AbyssLib, PlaceholderAPI ]
 authors: [ Consciences ]
