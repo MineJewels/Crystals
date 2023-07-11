@@ -1,15 +1,15 @@
-package org.minejewels.jewelstokens.listeners;
+package org.minejewels.jewelsminerals.listeners;
 
 import net.abyssdev.abysslib.listener.AbyssListener;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
-import org.minejewels.jewelstokens.JewelsTokens;
-import org.minejewels.jewelstokens.player.TokenPlayer;
+import org.minejewels.jewelsminerals.JewelsMinerals;
+import org.minejewels.jewelsminerals.player.MineralPlayer;
 
-public class PlayerJoinListener extends AbyssListener<JewelsTokens> {
+public class PlayerJoinListener extends AbyssListener<JewelsMinerals> {
 
-    public PlayerJoinListener(final JewelsTokens plugin) {
+    public PlayerJoinListener(final JewelsMinerals plugin) {
         super(plugin);
     }
 
@@ -19,6 +19,6 @@ public class PlayerJoinListener extends AbyssListener<JewelsTokens> {
 
         if (this.plugin.getPlayerStorage().contains(player.getUniqueId())) return;
 
-        this.plugin.getPlayerStorage().save(new TokenPlayer(player.getUniqueId()));
+        this.plugin.getPlayerStorage().save(new MineralPlayer(player.getUniqueId()));
     }
 }

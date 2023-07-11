@@ -1,4 +1,4 @@
-package org.minejewels.jewelstokens.commands.subcommands;
+package org.minejewels.jewelsminerals.commands.subcommands;
 
 import net.abyssdev.abysslib.command.AbyssSubCommand;
 import net.abyssdev.abysslib.command.context.CommandContext;
@@ -6,13 +6,12 @@ import net.abyssdev.abysslib.placeholder.PlaceholderReplacer;
 import net.abyssdev.abysslib.utils.Utils;
 import org.bukkit.entity.Player;
 import org.eclipse.collections.api.factory.Sets;
-import org.eclipse.collections.api.set.ImmutableSet;
-import org.minejewels.jewelstokens.JewelsTokens;
-import org.minejewels.jewelstokens.player.TokenPlayer;
+import org.minejewels.jewelsminerals.JewelsMinerals;
+import org.minejewels.jewelsminerals.player.MineralPlayer;
 
-public class TokensPayCommand extends AbyssSubCommand<JewelsTokens> {
+public class MineralsPayCommand extends AbyssSubCommand<JewelsMinerals> {
 
-    public TokensPayCommand(final JewelsTokens plugin) {
+    public MineralsPayCommand(final JewelsMinerals plugin) {
         super(plugin, 2, Sets.immutable.of("pay", "send"));
     }
 
@@ -45,22 +44,22 @@ public class TokensPayCommand extends AbyssSubCommand<JewelsTokens> {
             return;
         }
 
-        final TokenPlayer tokenPlayer = this.plugin.getPlayerStorage().get(player.getUniqueId());
+        final MineralPlayer mineralPlayer = this.plugin.getPlayerStorage().get(player.getUniqueId());
 
-        if (!tokenPlayer.hasEnoughTokens(amount)) {
-            this.plugin.getMessageCache().sendMessage(player, "messages.not-enough-tokens", new PlaceholderReplacer().addPlaceholder("%amount%", Utils.format(tokenPlayer.getTokensNeeded(amount))));
+        if (!mineralPlayer.hasEnoughTokens(amount)) {
+            this.plugin.getMessageCache().sendMessage(player, "messages.not-enough-minerals", new PlaceholderReplacer().addPlaceholder("%amount%", Utils.format(mineralPlayer.getTokensNeeded(amount))));
             return;
         }
 
-        final TokenPlayer tokenTarget = this.plugin.getPlayerStorage().get(target.getUniqueId());
+        final MineralPlayer mineralTarget = this.plugin.getPlayerStorage().get(target.getUniqueId());
 
-        tokenPlayer.removeTokens(amount);
-        tokenTarget.addTokens(amount);
+        mineralPlayer.removeTokens(amount);
+        mineralTarget.addTokens(amount);
 
         final PlaceholderReplacer replacer = new PlaceholderReplacer()
                 .addPlaceholder("%amount%", Utils.format(amount));
 
-        this.plugin.getMessageCache().sendMessage(player, "messages.tokens-sent", replacer.addPlaceholder("%target%", target.getName()));
-        this.plugin.getMessageCache().sendMessage(target, "messages.tokens-received", replacer.addPlaceholder("%player%", player.getName()));
+        this.plugin.getMessageCache().sendMessage(player, "messages.minerals-sent", replacer.addPlaceholder("%target%", target.getName()));
+        this.plugin.getMessageCache().sendMessage(target, "messages.minerals-received", replacer.addPlaceholder("%player%", player.getName()));
     }
 }

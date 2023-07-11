@@ -1,17 +1,16 @@
-package org.minejewels.jewelstokens.placeholder;
+package org.minejewels.jewelsminerals.placeholder;
 
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import net.abyssdev.abysslib.utils.Utils;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-import org.minejewels.jewelstokens.JewelsTokens;
+import org.minejewels.jewelsminerals.JewelsMinerals;
 
-public class TokensPlaceholder extends PlaceholderExpansion {
+public class MineralsPlaceholder extends PlaceholderExpansion {
 
-    private final JewelsTokens plugin;
+    private final JewelsMinerals plugin;
 
-    public TokensPlaceholder(final JewelsTokens plugin) {
+    public MineralsPlaceholder(final JewelsMinerals plugin) {
         this.plugin = plugin;
 
         this.register();
@@ -19,7 +18,7 @@ public class TokensPlaceholder extends PlaceholderExpansion {
 
     @Override
     public @NotNull String getIdentifier() {
-        return "tokens";
+        return "minerals";
     }
 
     @Override

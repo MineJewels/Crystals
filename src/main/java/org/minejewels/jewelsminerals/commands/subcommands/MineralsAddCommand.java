@@ -1,4 +1,4 @@
-package org.minejewels.jewelstokens.commands.subcommands;
+package org.minejewels.jewelsminerals.commands.subcommands;
 
 import net.abyssdev.abysslib.command.AbyssSubCommand;
 import net.abyssdev.abysslib.command.context.CommandContext;
@@ -7,13 +7,13 @@ import net.abyssdev.abysslib.utils.Utils;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.eclipse.collections.api.factory.Sets;
-import org.minejewels.jewelstokens.JewelsTokens;
-import org.minejewels.jewelstokens.player.TokenPlayer;
+import org.minejewels.jewelsminerals.JewelsMinerals;
+import org.minejewels.jewelsminerals.player.MineralPlayer;
 
-public class TokensSetCommand extends AbyssSubCommand<JewelsTokens> {
+public class MineralsAddCommand extends AbyssSubCommand<JewelsMinerals> {
 
-    public TokensSetCommand(final JewelsTokens plugin) {
-        super(plugin, 2, Sets.immutable.of("set", "put"));
+    public MineralsAddCommand(final JewelsMinerals plugin) {
+        super(plugin, 2, Sets.immutable.of("add", "give"));
     }
 
     @Override
@@ -45,18 +45,18 @@ public class TokensSetCommand extends AbyssSubCommand<JewelsTokens> {
 
         final long amount = context.asLong(1);
 
-        if (amount <= -1) {
+        if (amount <= 0) {
             this.plugin.getMessageCache().sendMessage(player, "messages.invalid-number");
             return;
         }
 
-        final TokenPlayer tokenTarget = this.plugin.getPlayerStorage().get(target.getUniqueId());
+        final MineralPlayer mineralTarget = this.plugin.getPlayerStorage().get(target.getUniqueId());
 
-        tokenTarget.setTokens(amount);
+        mineralTarget.addTokens(amount);
 
         final PlaceholderReplacer replacer = new PlaceholderReplacer()
                 .addPlaceholder("%amount%", Utils.format(amount));
 
-        this.plugin.getMessageCache().sendMessage(target, "messages.tokens-set", replacer);
+        this.plugin.getMessageCache().sendMessage(target, "messages.minerals-added", replacer);
     }
 }

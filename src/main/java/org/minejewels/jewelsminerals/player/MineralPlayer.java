@@ -1,4 +1,4 @@
-package org.minejewels.jewelstokens.player;
+package org.minejewels.jewelsminerals.player;
 
 import lombok.Data;
 import net.abyssdev.abysslib.storage.id.Id;
@@ -6,7 +6,7 @@ import net.abyssdev.abysslib.storage.id.Id;
 import java.util.UUID;
 
 @Data
-public class TokenPlayer {
+public class MineralPlayer {
 
     @Id
     private final UUID uuid;

@@ -1,4 +1,4 @@
-package org.minejewels.jewelstokens.commands.subcommands;
+package org.minejewels.jewelsminerals.commands.subcommands;
 
 import net.abyssdev.abysslib.command.AbyssSubCommand;
 import net.abyssdev.abysslib.command.context.CommandContext;
@@ -7,12 +7,12 @@ import net.abyssdev.abysslib.utils.Utils;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.eclipse.collections.api.factory.Sets;
-import org.minejewels.jewelstokens.JewelsTokens;
-import org.minejewels.jewelstokens.player.TokenPlayer;
+import org.minejewels.jewelsminerals.JewelsMinerals;
+import org.minejewels.jewelsminerals.player.MineralPlayer;
 
-public class TokensRemoveCommand extends AbyssSubCommand<JewelsTokens> {
+public class MineralsRemoveCommand extends AbyssSubCommand<JewelsMinerals> {
 
-    public TokensRemoveCommand(final JewelsTokens plugin) {
+    public MineralsRemoveCommand(final JewelsMinerals plugin) {
         super(plugin, 2, Sets.immutable.of("remove", "take"));
     }
 
@@ -50,13 +50,13 @@ public class TokensRemoveCommand extends AbyssSubCommand<JewelsTokens> {
             return;
         }
 
-        final TokenPlayer tokenTarget = this.plugin.getPlayerStorage().get(target.getUniqueId());
+        final MineralPlayer mineralTarget = this.plugin.getPlayerStorage().get(target.getUniqueId());
 
-        tokenTarget.removeTokens(amount);
+        mineralTarget.removeTokens(amount);
 
         final PlaceholderReplacer replacer = new PlaceholderReplacer()
                 .addPlaceholder("%amount%", Utils.format(amount));
 
-        this.plugin.getMessageCache().sendMessage(target, "messages.tokens-removed", replacer);
+        this.plugin.getMessageCache().sendMessage(target, "messages.minerals-removed", replacer);
     }
 }

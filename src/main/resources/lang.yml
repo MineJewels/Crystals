@@ -33,7 +33,7 @@ messages:
     message:
       enabled: true
       value:
-        - "&8[&c&lAlert&8] &cYou need &4&n%amount%&c more tokens to do this!"
+        - "&8[&c&lAlert&8] &cYou need &4&n%amount%&c more minerals to do this!"
     sound:
       enabled: true
       value: "FIZZ"
@@ -45,8 +45,8 @@ messages:
       value:
         - "#ae5bb9M#ab58bdi#a856c1n#a453c6e#a150caJ#9e4ecee#9b4bd2w#9748d7e#9446dbl#9143dfs &8| #ae5bb9H#a453c6e#9b4bd2l#9143dfp"
         - "&7"
-        - "#AE5BB9✧ #9143DF/tokens balance &f<player>"
-        - "#AE5BB9✧ #9143DF/tokens pay &f{player} {amount}"
+        - "#AE5BB9✧ #9143DF/minerals balance &f<player>"
+        - "#AE5BB9✧ #9143DF/minerals pay &f{player} {amount}"
     sound:
       enabled: false
       value: "FIZZ"
@@ -58,81 +58,81 @@ messages:
       value:
         - "#ae5bb9M#ab58bdi#a856c1n#a453c6e#a150caJ#9e4ecee#9b4bd2w#9748d7e#9446dbl#9143dfs &8| #ae5bb9H#a453c6e#9b4bd2l#9143dfp"
         - "&7"
-        - "#AE5BB9✧ #9143DF/tokens balance &f<player>"
-        - "#AE5BB9✧ #9143DF/tokens pay &f{player} {amount}"
-        - "#AE5BB9✧ #9143DF/tokens give &f{player} {amount}"
-        - "#AE5BB9✧ #9143DF/tokens set &f{player} {amount}"
-        - "#AE5BB9✧ #9143DF/tokens remove &f{player} {amount}"
+        - "#AE5BB9✧ #9143DF/minerals balance &f<player>"
+        - "#AE5BB9✧ #9143DF/minerals pay &f{player} {amount}"
+        - "#AE5BB9✧ #9143DF/minerals give &f{player} {amount}"
+        - "#AE5BB9✧ #9143DF/minerals set &f{player} {amount}"
+        - "#AE5BB9✧ #9143DF/minerals remove &f{player} {amount}"
     sound:
       enabled: false
       value: "FIZZ"
       volume: 1
       pitch: 1
-  tokens-balance:
+  minerals-balance:
     message:
       enabled: true
       value:
-        - "&8[&b&lAlert&8] &bYou currently have &3&n%amount%&b tokens!"
+        - "&8[&b&lAlert&8] &bYou currently have &3&n%amount%&b minerals!"
     sound:
       enabled: false
       value: "FIZZ"
       volume: 1
       pitch: 1
-  tokens-balance-others:
+  minerals-balance-others:
     message:
       enabled: true
       value:
-        - "&8[&b&lAlert&8] &b%player% currently has &3&n%amount%&b tokens!"
+        - "&8[&b&lAlert&8] &b%player% currently has &3&n%amount%&b minerals!"
     sound:
       enabled: false
       value: "FIZZ"
       volume: 1
       pitch: 1
-  tokens-sent:
+  minerals-sent:
     message:
       enabled: true
       value:
-        - "&8[&b&lAlert&8] &bYou have sent &3&n%amount%&b tokens to %target%!"
+        - "&8[&b&lAlert&8] &bYou have sent &3&n%amount%&b minerals to %target%!"
     sound:
       enabled: false
       value: "FIZZ"
       volume: 1
       pitch: 1
-  tokens-received:
+  minerals-received:
     message:
       enabled: true
       value:
-        - "&8[&b&lAlert&8] &bYou have received &3&n%amount%&b tokens from %player%!"
+        - "&8[&b&lAlert&8] &bYou have received &3&n%amount%&b minerals from %player%!"
     sound:
       enabled: false
       value: "FIZZ"
       volume: 1
       pitch: 1
-  tokens-set:
+  minerals-set:
     message:
       enabled: true
       value:
-        - "&8[&b&lAlert&8] &bYour balance was set to &3&n%amount%&b tokens!"
+        - "&8[&b&lAlert&8] &bYour balance was set to &3&n%amount%&b minerals!"
     sound:
       enabled: false
       value: "FIZZ"
       volume: 1
       pitch: 1
-  tokens-added:
+  minerals-added:
     message:
       enabled: true
       value:
-        - "&8[&b&lAlert&8] &bYou have had &3&n%amount%&b tokens added to your balance!"
+        - "&8[&b&lAlert&8] &bYou have had &3&n%amount%&b minerals added to your balance!"
     sound:
       enabled: false
       value: "FIZZ"
       volume: 1
       pitch: 1
-  tokens-removed:
+  minerals-removed:
     message:
       enabled: true
       value:
-        - "&8[&b&lAlert&8] &bYou have had &3&n%amount%&b tokens removed from your balance!"
+        - "&8[&b&lAlert&8] &bYou have had &3&n%amount%&b minerals removed from your balance!"
     sound:
       enabled: false
       value: "FIZZ"
